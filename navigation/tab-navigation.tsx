@@ -16,8 +16,9 @@ export const TabNavigator = () => {
       <Tab.Navigator
         screenOptions={({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
+			  /* tslint:disable */
             let iconName: any; // TODO: find better type
-
+			/* tslint:enable */
             if (route.name === "Home") {
               iconName = focused
                 ? "ios-information-circle"
